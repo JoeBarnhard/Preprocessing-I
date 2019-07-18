@@ -121,32 +121,43 @@ header {
 			}
 			img {
 				max-width:100%;
+				margin-bottom: .3rem;
 			}
 
 		}
 		.headline {
 			h1 {
 				font-size:1.8rem;
-				font-weight: 500;
+				font-weight: 700;
 
+			}
+			span {
+				color: @bluegray;
+				font-size:.8rem;
 			}
 			h2 {
 				.header2();
 				margin-bottom: .75rem;
+				color: @darkgray;
 			}
 			p {
-				font-size:.8rem;
+				font-size:.7rem;
 				margin: .75rem 0;
+				width:50%;
+				color: @bluegray;
+				text-align:justify;  
+				text-justify:initial;
+				margin-bottom: 1.2rem;
 			}
 			
 			a {
-				border: solid .02rem gray;
+				border: solid .02rem @lightgray;
 				width: 10%;
 				display: inline-block;
 				text-align: center;
-				padding: .55rem, .25rem;
+				padding: 1.2rem, .25rem;
 				color: @darkgray;
-				font-size: .9rem;
+				font-size: .8rem;
 				font-family: @Ubuntu;
 				text-decoration: none;
 

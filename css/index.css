@@ -191,28 +191,39 @@ body {
 }
 .container header .headerbox .imagecontainer img {
   max-width: 100%;
+  margin-bottom: 0.3rem;
 }
 .container header .headerbox .headline h1 {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
+}
+.container header .headerbox .headline span {
+  color: #849db0;
+  font-size: 0.8rem;
 }
 .container header .headerbox .headline h2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
+  color: #2F4F4F;
 }
 .container header .headerbox .headline p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin: 0.75rem 0;
+  width: 50%;
+  color: #849db0;
+  text-align: justify;
+  text-justify: initial;
+  margin-bottom: 1.2rem;
 }
 .container header .headerbox .headline a {
-  border: solid 0.02rem gray;
+  border: solid 0.02rem #d9d9d9;
   width: 10%;
   display: inline-block;
   text-align: center;
-  padding: 0.55rem, 0.25rem;
+  padding: 1.2rem, 0.25rem;
   color: #2F4F4F;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
 }
