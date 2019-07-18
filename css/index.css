@@ -250,11 +250,15 @@ body {
 .container .skills .skills-list {
   width: 48%;
 }
+.container .skills .skills-list li {
+  font-family: 'Ubuntu', sans-serif;
+}
 .container .skills .history {
   margin: 2rem 0;
   width: 100%;
 }
 .container .skills .history table {
+  font-family: 'Ubuntu', sans-serif;
   width: 100%;
 }
 .container .skills .history table th {
