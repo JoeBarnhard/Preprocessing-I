@@ -189,10 +189,14 @@ header {
 	}
 
 	.about {
-		
 		width:48%;
-		
-		
+		p {
+			font-family: @Ubuntu;
+			text-align:justify;  
+			text-justify:initial;
+			margin-bottom: 1.2rem;
+			width:70%;
+		}	
 	}
 
 	.skills-list {
@@ -207,23 +211,26 @@ header {
 		margin:2rem 0;
 		width:100%;
 		table {
+			
 			font-family: @Ubuntu;
 			width:100%;
 			th {
 				font-size:.8rem;
 				font-weight: 600;
+				
+				
 			}
 			td {
 				font-size:.7rem;
 				font-weight: 300;
-				
-				padding: .2rem;
+				color: @darkgray;
+				padding: .3rem;
 			}
 			
 			tr {
 				th, td {
 					text-align: left;
-					margin-bottom:.3rem;
+					margin-bottom:.5rem;
 				}
 				&:nth-child(even) {
 					background-color:#dddddd;
