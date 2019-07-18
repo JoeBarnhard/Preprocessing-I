@@ -130,7 +130,92 @@ table {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+body {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  font-family: 'Raleway', sans-serif;
+}
+header .nav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+header .nav-container nav {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+header .nav-container nav a {
+  text-decoration: none;
+  color: #849db0;
+  padding: 0.25rem;
+}
+header .headerbox {
+  background-color: #e9ecef;
+  padding: 1.5rem;
+}
+header .headerbox .imagecontainer {
+  width: 30%;
+}
+header .headerbox .imagecontainer img {
+  max-width: 100%;
+}
+header .headerbox .headline h1 {
+  font-size: 1.8rem;
+}
+header .headerbox .headline h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+header .headerbox .headline p {
+  font-size: 0.8rem;
+  margin: 0.75rem 0;
+}
+header .headerbox .headline a {
+  border: solid 0.02rem gray;
+  width: 10%;
+  display: inline-block;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+.skills .about {
+  width: 48%;
+}
+.skills .skills-list {
+  width: 48%;
+}
+.skills .history {
+  margin: 2rem 0;
+  width: 100%;
+}
+.skills .history table {
+  width: 100%;
+}
+.skills .history table tr th,
+.skills .history table tr td {
+  text-align: left;
+}
+.skills .history table tr:nth-child(even) {
+  background-color: #dddddd;
 }

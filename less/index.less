@@ -53,7 +53,127 @@ table {
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+	font-size: 62.5%;
+}
+
+@lightgray:#d9d9d9;
+@gray:#aaaaaa;
+@bluegray:#849db0;
+@raleway:'Raleway', sans-serif;
+
 html, body {
     height: 100%;
+}
+.container {
+	width:1200px;
+	margin:0 auto;
+
+}
+header {
+	font-family:@raleway;
+
+	.nav-container {
+		display:flex;
+		justify-content:flex-end;
+
+		nav {
+			// border: solid 1px red;
+			display:flex;
+			justify-content:space-around;
+			width:40%;
+			
+			
+
+			a {
+				text-decoration:none;
+				color:@bluegray;
+				padding: .25rem;
+			}
+		}
+	}
+	
+	.headerbox {
+		background-color:#e9ecef;
+		padding: 1.5rem;
+		
+		.imagecontainer {
+			width:30%;
+			
+			img {
+				max-width:100%;
+			}
+		}
+		.headline {
+			h1 {
+				font-size:1.8rem;
+
+			}
+			h2 {
+				font-size:1.1rem;
+				margin-bottom: .75rem;
+			}
+			p {
+				font-size:.8rem;
+				margin: .75rem 0;
+			}
+			a {
+				border: solid .02rem gray;
+				width: 10%;
+				display: inline-block;
+				text-align: center;
+				padding: .25rem 0;
+
+			}
+
+			
+		}
+	}
+	
+}
+
+.skills {
+	display:flex;
+	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 1.2rem;
+
+	.about {
+		
+		width:48%;
+		
+		
+	}
+
+	.skills-list {
+		
+		width: 48%;
+		
+	}
+	.history {
+
+		margin:2rem 0;
+		width:100%;
+		table {
+			width:100%;
+		
+			
+			tr {
+				th, td {
+					text-align: left;
+					
+				}
+				&:nth-child(even) {
+					background-color:#dddddd;
+				}
+			}
+		}
+	}
+
+
+
 }
 
