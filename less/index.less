@@ -54,7 +54,7 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 body {
 	font-size: 62.5%;
 }
@@ -62,7 +62,17 @@ body {
 @lightgray:#d9d9d9;
 @gray:#aaaaaa;
 @bluegray:#849db0;
+@darkgray: #2F4F4F;
 @raleway:'Raleway', sans-serif;
+@Ubuntu:'Ubuntu', sans-serif;
+.flexwrap() {
+	display:flex;
+	flex-wrap:wrap;
+}
+.header2() {
+	font-family:@Ubuntu;
+	font-size:.9rem;
+}
 
 html, body {
     height: 100%;
@@ -71,7 +81,10 @@ html, body {
 	width:1200px;
 	margin:0 auto;
 
-}
+	@media (max-width:500px) {
+		width:450px;
+	}
+
 header {
 	font-family:@raleway;
 
@@ -89,8 +102,10 @@ header {
 
 			a {
 				text-decoration:none;
-				color:@bluegray;
+				color:@darkgray;
 				padding: .25rem;
+
+				
 			}
 		}
 	}
@@ -101,30 +116,44 @@ header {
 		
 		.imagecontainer {
 			width:30%;
-			
+			@media (max-width:500px){
+				width:63%;
+			}
 			img {
 				max-width:100%;
 			}
+
 		}
 		.headline {
 			h1 {
 				font-size:1.8rem;
+				font-weight: 500;
 
 			}
 			h2 {
-				font-size:1.1rem;
+				.header2();
 				margin-bottom: .75rem;
 			}
 			p {
 				font-size:.8rem;
 				margin: .75rem 0;
 			}
+			
 			a {
 				border: solid .02rem gray;
 				width: 10%;
 				display: inline-block;
 				text-align: center;
-				padding: .25rem 0;
+				padding: .55rem, .25rem;
+				color: @darkgray;
+				font-size: .9rem;
+				font-family: @Ubuntu;
+				text-decoration: none;
+
+				@media (max-width:500px) {
+					width:30%;
+
+				}
 
 			}
 
@@ -135,11 +164,15 @@ header {
 }
 
 .skills {
-	display:flex;
-	
-	flex-wrap: wrap;
+	.flexwrap();
 	justify-content: space-between;
 	margin-top: 1.2rem;
+
+	h2 {
+		.header2();
+		font-weight: 600;
+		padding-bottom:.2rem;
+	}
 
 	.about {
 		
@@ -159,12 +192,21 @@ header {
 		width:100%;
 		table {
 			width:100%;
-		
+			th {
+				font-size:.8rem;
+				font-weight: 600;
+			}
+			td {
+				font-size:.7rem;
+				font-weight: 300;
+				
+				padding: .2rem;
+			}
 			
 			tr {
 				th, td {
 					text-align: left;
-					
+					margin-bottom:.3rem;
 				}
 				&:nth-child(even) {
 					background-color:#dddddd;
@@ -176,4 +218,4 @@ header {
 
 
 }
-
+}

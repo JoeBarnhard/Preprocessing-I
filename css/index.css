@@ -137,6 +137,13 @@ table {
   font-display: swap;
   src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
 body {
   font-size: 62.5%;
 }
@@ -148,74 +155,111 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-header {
+@media (max-width: 500px) {
+  .container {
+    width: 450px;
+  }
+}
+.container header {
   font-family: 'Raleway', sans-serif;
 }
-header .nav-container {
+.container header .nav-container {
   display: flex;
   justify-content: flex-end;
 }
-header .nav-container nav {
+.container header .nav-container nav {
   display: flex;
   justify-content: space-around;
   width: 40%;
 }
-header .nav-container nav a {
+.container header .nav-container nav a {
   text-decoration: none;
-  color: #849db0;
+  color: #2F4F4F;
   padding: 0.25rem;
 }
-header .headerbox {
+.container header .headerbox {
   background-color: #e9ecef;
   padding: 1.5rem;
 }
-header .headerbox .imagecontainer {
+.container header .headerbox .imagecontainer {
   width: 30%;
 }
-header .headerbox .imagecontainer img {
+@media (max-width: 500px) {
+  .container header .headerbox .imagecontainer {
+    width: 63%;
+  }
+}
+.container header .headerbox .imagecontainer img {
   max-width: 100%;
 }
-header .headerbox .headline h1 {
+.container header .headerbox .headline h1 {
   font-size: 1.8rem;
+  font-weight: 500;
 }
-header .headerbox .headline h2 {
-  font-size: 1.1rem;
+.container header .headerbox .headline h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9rem;
   margin-bottom: 0.75rem;
 }
-header .headerbox .headline p {
+.container header .headerbox .headline p {
   font-size: 0.8rem;
   margin: 0.75rem 0;
 }
-header .headerbox .headline a {
+.container header .headerbox .headline a {
   border: solid 0.02rem gray;
   width: 10%;
   display: inline-block;
   text-align: center;
-  padding: 0.25rem 0;
+  padding: 0.55rem, 0.25rem;
+  color: #2F4F4F;
+  font-size: 0.9rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
 }
-.skills {
+@media (max-width: 500px) {
+  .container header .headerbox .headline a {
+    width: 30%;
+  }
+}
+.container .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 1.2rem;
 }
-.skills .about {
+.container .skills h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+}
+.container .skills .about {
   width: 48%;
 }
-.skills .skills-list {
+.container .skills .skills-list {
   width: 48%;
 }
-.skills .history {
+.container .skills .history {
   margin: 2rem 0;
   width: 100%;
 }
-.skills .history table {
+.container .skills .history table {
   width: 100%;
 }
-.skills .history table tr th,
-.skills .history table tr td {
-  text-align: left;
+.container .skills .history table th {
+  font-size: 0.8rem;
+  font-weight: 600;
 }
-.skills .history table tr:nth-child(even) {
+.container .skills .history table td {
+  font-size: 0.7rem;
+  font-weight: 300;
+  padding: 0.2rem;
+}
+.container .skills .history table tr th,
+.container .skills .history table tr td {
+  text-align: left;
+  margin-bottom: 0.3rem;
+}
+.container .skills .history table tr:nth-child(even) {
   background-color: #dddddd;
 }
