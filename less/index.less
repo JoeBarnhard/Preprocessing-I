@@ -53,7 +53,193 @@ table {
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body {
+	font-size: 62.5%;
+}
+
+@lightgray:#d9d9d9;
+@gray:#aaaaaa;
+@bluegray:#849db0;
+@darkgray: #2F4F4F;
+@raleway:'Raleway', sans-serif;
+@Ubuntu:'Ubuntu', sans-serif;
+.flexwrap() {
+	display:flex;
+	flex-wrap:wrap;
+}
+.header2() {
+	font-family:@Ubuntu;
+	font-size:.9rem;
+}
+
 html, body {
     height: 100%;
 }
+.container {
+	width:1200px;
+	margin:0 auto;
 
+	@media (max-width:500px) {
+		width:450px;
+	}
+
+header {
+	font-family:@raleway;
+
+	.nav-container {
+		display:flex;
+		justify-content:flex-end;
+
+		nav {
+			// border: solid 1px red;
+			display:flex;
+			justify-content:space-around;
+			width:40%;
+			
+			
+
+			a {
+				text-decoration:none;
+				color:@darkgray;
+				padding: .25rem;
+
+				
+			}
+		}
+	}
+	
+	.headerbox {
+		background-color:#e9ecef;
+		padding: 1.5rem;
+		
+		.imagecontainer {
+			width:30%;
+			@media (max-width:500px){
+				width:63%;
+			}
+			img {
+				max-width:100%;
+				margin-bottom: .3rem;
+			}
+
+		}
+		.headline {
+			h1 {
+				font-size:1.8rem;
+				font-weight: 700;
+
+			}
+			span {
+				color: @bluegray;
+				font-size:.8rem;
+			}
+			h2 {
+				.header2();
+				margin-bottom: .75rem;
+				color: @darkgray;
+			}
+			p {
+				font-size:.7rem;
+				margin: .75rem 0;
+				width:50%;
+				color: @bluegray;
+				text-align:justify;  
+				text-justify:initial;
+				margin-bottom: 1.2rem;
+			}
+			
+			a {
+				border: solid .02rem @lightgray;
+				width: 10%;
+				display: inline-block;
+				text-align: center;
+				padding: 1.2rem, .25rem;
+				color: @darkgray;
+				font-size: .8rem;
+				font-family: @Ubuntu;
+				text-decoration: none;
+
+				@media (max-width:500px) {
+					width:30%;
+
+				}
+
+			}
+
+			
+		}
+	}
+	
+}
+
+.skills {
+
+	
+
+	.flexwrap();
+	justify-content: space-between;
+	margin-top: 1.2rem;
+
+	h2 {
+		.header2();
+		font-weight: 600;
+		padding-bottom:.2rem;
+	}
+
+	.about {
+		width:48%;
+		p {
+			font-family: @Ubuntu;
+			text-align:justify;  
+			text-justify:initial;
+			margin-bottom: 1.2rem;
+			width:70%;
+		}	
+	}
+
+	.skills-list {
+		li {
+			font-family: @Ubuntu;
+		}
+		width: 48%;
+		
+	}
+	.history {
+
+		margin:2rem 0;
+		width:100%;
+		table {
+			
+			font-family: @Ubuntu;
+			width:100%;
+			th {
+				font-size:.8rem;
+				font-weight: 600;
+				
+				
+			}
+			td {
+				font-size:.7rem;
+				font-weight: 300;
+				color: @darkgray;
+				padding: .3rem;
+			}
+			
+			tr {
+				th, td {
+					text-align: left;
+					margin-bottom:.5rem;
+				}
+				&:nth-child(even) {
+					background-color:#dddddd;
+				}
+			}
+		}
+	}
+
+
+
+}
+}

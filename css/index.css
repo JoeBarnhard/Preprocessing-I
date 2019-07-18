@@ -1,1 +1,288 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+body {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 450px;
+  }
+}
+.container header {
+  font-family: 'Raleway', sans-serif;
+}
+.container header .nav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.container header .nav-container nav {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.container header .nav-container nav a {
+  text-decoration: none;
+  color: #2F4F4F;
+  padding: 0.25rem;
+}
+.container header .headerbox {
+  background-color: #e9ecef;
+  padding: 1.5rem;
+}
+.container header .headerbox .imagecontainer {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .container header .headerbox .imagecontainer {
+    width: 63%;
+  }
+}
+.container header .headerbox .imagecontainer img {
+  max-width: 100%;
+  margin-bottom: 0.3rem;
+}
+.container header .headerbox .headline h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.container header .headerbox .headline span {
+  color: #849db0;
+  font-size: 0.8rem;
+}
+.container header .headerbox .headline h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #2F4F4F;
+}
+.container header .headerbox .headline p {
+  font-size: 0.7rem;
+  margin: 0.75rem 0;
+  width: 50%;
+  color: #849db0;
+  text-align: justify;
+  text-justify: initial;
+  margin-bottom: 1.2rem;
+}
+.container header .headerbox .headline a {
+  border: solid 0.02rem #d9d9d9;
+  width: 10%;
+  display: inline-block;
+  text-align: center;
+  padding: 1.2rem, 0.25rem;
+  color: #2F4F4F;
+  font-size: 0.8rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container header .headerbox .headline a {
+    width: 30%;
+  }
+}
+.container .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+.container .skills h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+}
+.container .skills .about {
+  width: 48%;
+}
+.container .skills .about p {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: justify;
+  text-justify: initial;
+  margin-bottom: 1.2rem;
+  width: 70%;
+}
+.container .skills .skills-list {
+  width: 48%;
+}
+.container .skills .skills-list li {
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .skills .history {
+  margin: 2rem 0;
+  width: 100%;
+}
+.container .skills .history table {
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+}
+.container .skills .history table th {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.container .skills .history table td {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: #2F4F4F;
+  padding: 0.3rem;
+}
+.container .skills .history table tr th,
+.container .skills .history table tr td {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.container .skills .history table tr:nth-child(even) {
+  background-color: #dddddd;
+}
